@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC0917992012BD9100069D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC0917982012BD9100069D77 /* Assets.xcassets */; };
+		FC0917A02012BD9100069D77 /* ARMessage MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FC09179F2012BD9100069D77 /* ARMessage MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FC0917A52012BD9100069D77 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0917A42012BD9100069D77 /* Messages.framework */; };
+		FC0917A82012BD9100069D77 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0917A72012BD9100069D77 /* MessagesViewController.swift */; };
+		FC0917AB2012BD9100069D77 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC0917A92012BD9100069D77 /* MainInterface.storyboard */; };
+		FC0917AD2012BD9100069D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC0917AC2012BD9100069D77 /* Assets.xcassets */; };
+		FC0917B92012BE0300069D77 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0917B82012BE0300069D77 /* CameraViewController.swift */; };
+		FC0917BB2013D3E200069D77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0917BA2013D3E200069D77 /* ViewController.swift */; };
+		FC0917BD2013D3ED00069D77 /* VirtualContentUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0917BC2013D3ED00069D77 /* VirtualContentUpdater.swift */; };
+		FC0917C32013D3F900069D77 /* VirtualFaceContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0917BF2013D3F900069D77 /* VirtualFaceContent.swift */; };
+		FC0917C42013D3F900069D77 /* GlassesOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0917C02013D3F900069D77 /* GlassesOverlay.swift */; };
+		FC0917C52013D3F900069D77 /* Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0917C12013D3F900069D77 /* Mask.swift */; };
+		FC0917C62013D3F900069D77 /* RobotHead.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0917C22013D3F900069D77 /* RobotHead.swift */; };
+		FC0917CA2013D40600069D77 /* VirtualContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0917C82013D40600069D77 /* VirtualContentType.swift */; };
+		FC0917CB2013D40600069D77 /* ContentSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0917C92013D40600069D77 /* ContentSelectionController.swift */; };
+		FC0917CD2013D42000069D77 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0917CC2013D42000069D77 /* StatusViewController.swift */; };
+		FC0917D32013D42D00069D77 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = FC0917CF2013D42C00069D77 /* Models.scnassets */; };
+		FC0917D42013D42D00069D77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC0917D02013D42C00069D77 /* LaunchScreen.storyboard */; };
+		FC0917D52013D42D00069D77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC0917D12013D42C00069D77 /* Assets.xcassets */; };
+		FC0917D62013D42D00069D77 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC0917D22013D42C00069D77 /* Info.plist */; };
+		FC0917D82013D44600069D77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC0917D72013D44600069D77 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC0917A12012BD9100069D77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC09178F2012BD9100069D77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC09179E2012BD9100069D77;
+			remoteInfo = "ARMessage MessagesExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FC0917B42012BD9100069D77 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FC0917A02012BD9100069D77 /* ARMessage MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FC0917952012BD9100069D77 /* ARMessage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARMessage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0917982012BD9100069D77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC09179A2012BD9100069D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC09179F2012BD9100069D77 /* ARMessage MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ARMessage MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0917A42012BD9100069D77 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		FC0917A72012BD9100069D77 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		FC0917AA2012BD9100069D77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		FC0917AC2012BD9100069D77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC0917AE2012BD9100069D77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC0917B82012BE0300069D77 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		FC0917BA2013D3E200069D77 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC0917BC2013D3ED00069D77 /* VirtualContentUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualContentUpdater.swift; sourceTree = "<group>"; };
+		FC0917BF2013D3F900069D77 /* VirtualFaceContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualFaceContent.swift; sourceTree = "<group>"; };
+		FC0917C02013D3F900069D77 /* GlassesOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlassesOverlay.swift; sourceTree = "<group>"; };
+		FC0917C12013D3F900069D77 /* Mask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mask.swift; sourceTree = "<group>"; };
+		FC0917C22013D3F900069D77 /* RobotHead.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RobotHead.swift; sourceTree = "<group>"; };
+		FC0917C82013D40600069D77 /* VirtualContentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualContentType.swift; sourceTree = "<group>"; };
+		FC0917C92013D40600069D77 /* ContentSelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentSelectionController.swift; sourceTree = "<group>"; };
+		FC0917CC2013D42000069D77 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		FC0917CF2013D42C00069D77 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
+		FC0917D02013D42C00069D77 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC0917D12013D42C00069D77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC0917D22013D42C00069D77 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC0917D72013D44600069D77 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC09179C2012BD9100069D77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC0917A52012BD9100069D77 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC09178E2012BD9100069D77 = {
+			isa = PBXGroup;
+			children = (
+				FC0917972012BD9100069D77 /* ARMessage */,
+				FC0917A62012BD9100069D77 /* ARMessage MessagesExtension */,
+				FC0917A32012BD9100069D77 /* Frameworks */,
+				FC0917962012BD9100069D77 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC0917962012BD9100069D77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC0917952012BD9100069D77 /* ARMessage.app */,
+				FC09179F2012BD9100069D77 /* ARMessage MessagesExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC0917972012BD9100069D77 /* ARMessage */ = {
+			isa = PBXGroup;
+			children = (
+				FC0917982012BD9100069D77 /* Assets.xcassets */,
+				FC09179A2012BD9100069D77 /* Info.plist */,
+			);
+			path = ARMessage;
+			sourceTree = "<group>";
+		};
+		FC0917A32012BD9100069D77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC0917A42012BD9100069D77 /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC0917A62012BD9100069D77 /* ARMessage MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				FC0917A72012BD9100069D77 /* MessagesViewController.swift */,
+				FC0917B82012BE0300069D77 /* CameraViewController.swift */,
+				FC0917BA2013D3E200069D77 /* ViewController.swift */,
+				FC0917BC2013D3ED00069D77 /* VirtualContentUpdater.swift */,
+				FC0917CC2013D42000069D77 /* StatusViewController.swift */,
+				FC0917A92012BD9100069D77 /* MainInterface.storyboard */,
+				FC0917AC2012BD9100069D77 /* Assets.xcassets */,
+				FC0917AE2012BD9100069D77 /* Info.plist */,
+				FC0917CE2013D42C00069D77 /* Resources */,
+				FC0917C72013D40600069D77 /* Content Selection */,
+				FC0917BE2013D3F900069D77 /* VirtualFaceContent */,
+			);
+			path = "ARMessage MessagesExtension";
+			sourceTree = "<group>";
+		};
+		FC0917BE2013D3F900069D77 /* VirtualFaceContent */ = {
+			isa = PBXGroup;
+			children = (
+				FC0917BF2013D3F900069D77 /* VirtualFaceContent.swift */,
+				FC0917C02013D3F900069D77 /* GlassesOverlay.swift */,
+				FC0917C12013D3F900069D77 /* Mask.swift */,
+				FC0917C22013D3F900069D77 /* RobotHead.swift */,
+			);
+			path = VirtualFaceContent;
+			sourceTree = "<group>";
+		};
+		FC0917C72013D40600069D77 /* Content Selection */ = {
+			isa = PBXGroup;
+			children = (
+				FC0917C82013D40600069D77 /* VirtualContentType.swift */,
+				FC0917C92013D40600069D77 /* ContentSelectionController.swift */,
+			);
+			path = "Content Selection";
+			sourceTree = "<group>";
+		};
+		FC0917CE2013D42C00069D77 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC0917D72013D44600069D77 /* Main.storyboard */,
+				FC0917CF2013D42C00069D77 /* Models.scnassets */,
+				FC0917D02013D42C00069D77 /* LaunchScreen.storyboard */,
+				FC0917D12013D42C00069D77 /* Assets.xcassets */,
+				FC0917D22013D42C00069D77 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC0917942012BD9100069D77 /* ARMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC0917B52012BD9100069D77 /* Build configuration list for PBXNativeTarget "ARMessage" */;
+			buildPhases = (
+				FC0917932012BD9100069D77 /* Resources */,
+				FC0917B42012BD9100069D77 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC0917A22012BD9100069D77 /* PBXTargetDependency */,
+			);
+			name = ARMessage;
+			productName = ARMessage;
+			productReference = FC0917952012BD9100069D77 /* ARMessage.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		FC09179E2012BD9100069D77 /* ARMessage MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC0917B12012BD9100069D77 /* Build configuration list for PBXNativeTarget "ARMessage MessagesExtension" */;
+			buildPhases = (
+				FC09179B2012BD9100069D77 /* Sources */,
+				FC09179C2012BD9100069D77 /* Frameworks */,
+				FC09179D2012BD9100069D77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ARMessage MessagesExtension";
+			productName = "ARMessage MessagesExtension";
+			productReference = FC09179F2012BD9100069D77 /* ARMessage MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC09178F2012BD9100069D77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Jonathan Woods";
+				TargetAttributes = {
+					FC0917942012BD9100069D77 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					FC09179E2012BD9100069D77 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FC0917922012BD9100069D77 /* Build configuration list for PBXProject "ARMessage" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC09178E2012BD9100069D77;
+			productRefGroup = FC0917962012BD9100069D77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC0917942012BD9100069D77 /* ARMessage */,
+				FC09179E2012BD9100069D77 /* ARMessage MessagesExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC0917932012BD9100069D77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC0917992012BD9100069D77 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC09179D2012BD9100069D77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC0917D82013D44600069D77 /* Main.storyboard in Resources */,
+				FC0917D32013D42D00069D77 /* Models.scnassets in Resources */,
+				FC0917D42013D42D00069D77 /* LaunchScreen.storyboard in Resources */,
+				FC0917D62013D42D00069D77 /* Info.plist in Resources */,
+				FC0917AD2012BD9100069D77 /* Assets.xcassets in Resources */,
+				FC0917AB2012BD9100069D77 /* MainInterface.storyboard in Resources */,
+				FC0917D52013D42D00069D77 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC09179B2012BD9100069D77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC0917CB2013D40600069D77 /* ContentSelectionController.swift in Sources */,
+				FC0917BB2013D3E200069D77 /* ViewController.swift in Sources */,
+				FC0917CA2013D40600069D77 /* VirtualContentType.swift in Sources */,
+				FC0917C32013D3F900069D77 /* VirtualFaceContent.swift in Sources */,
+				FC0917C62013D3F900069D77 /* RobotHead.swift in Sources */,
+				FC0917C52013D3F900069D77 /* Mask.swift in Sources */,
+				FC0917BD2013D3ED00069D77 /* VirtualContentUpdater.swift in Sources */,
+				FC0917A82012BD9100069D77 /* MessagesViewController.swift in Sources */,
+				FC0917B92012BE0300069D77 /* CameraViewController.swift in Sources */,
+				FC0917CD2013D42000069D77 /* StatusViewController.swift in Sources */,
+				FC0917C42013D3F900069D77 /* GlassesOverlay.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC0917A22012BD9100069D77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC09179E2012BD9100069D77 /* ARMessage MessagesExtension */;
+			targetProxy = FC0917A12012BD9100069D77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC0917A92012BD9100069D77 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC0917AA2012BD9100069D77 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC0917AF2012BD9100069D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC0917B02012BD9100069D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC0917B22012BD9100069D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M35DBRABN7;
+				INFOPLIST_FILE = "ARMessage MessagesExtension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emogo.ARMessage.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC0917B32012BD9100069D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M35DBRABN7;
+				INFOPLIST_FILE = "ARMessage MessagesExtension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emogo.ARMessage.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC0917B62012BD9100069D77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M35DBRABN7;
+				INFOPLIST_FILE = ARMessage/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emogo.ARMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC0917B72012BD9100069D77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M35DBRABN7;
+				INFOPLIST_FILE = ARMessage/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.emogo.ARMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC0917922012BD9100069D77 /* Build configuration list for PBXProject "ARMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC0917AF2012BD9100069D77 /* Debug */,
+				FC0917B02012BD9100069D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC0917B12012BD9100069D77 /* Build configuration list for PBXNativeTarget "ARMessage MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC0917B22012BD9100069D77 /* Debug */,
+				FC0917B32012BD9100069D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC0917B52012BD9100069D77 /* Build configuration list for PBXNativeTarget "ARMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC0917B62012BD9100069D77 /* Debug */,
+				FC0917B72012BD9100069D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC09178F2012BD9100069D77 /* Project object */;
+}
